@@ -67,3 +67,32 @@ input {
 form {
   width: 100%;
 }
+
+.label_html {
+  font-size: 16px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+}
+
+.login {
+  margin-top: 5rem;
+}
+
+.form_button {
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.welcome-info {
+  font-size: 10rem;
+  font-family: 'Roboto Condensed', sans-serif;
+  font-style: italic;
+  margin-top: 15rem;
+  margin-left: 6rem;
+  text-shadow: 2px 2px #f9fcf8;
+}
+
+.login_space {
+  margin-top: 1rem;
+  margin-left: 150px;
+}

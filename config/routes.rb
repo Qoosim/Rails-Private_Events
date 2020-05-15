@@ -1,4 +1,8 @@
 Rails.application.routes.draw do
-  get 'static_pages/home'
-  get 'home', to: 'users#show'
+
+
+  get 'signup', to: 'users#new'
+  post 'signup', to: 'users#create'
+
+  resources :users
 end

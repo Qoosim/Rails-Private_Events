@@ -7,3 +7,63 @@
 // font-family: 'Roboto Condensed', sans-serif;
 // font-family: 'Lato', sans-serif;
 // font-family: 'Oswald', sans-serif;
+
+body {
+  margin-top: 7rem;
+  box-sizing: border-box;
+}
+
+/* Sign up Form Styling */
+
+body {
+  background: #f1b452;
+}
+
+.info-call {
+  font-size: 7rem;
+  margin-top: 10rem;
+  margin-left: 19rem;
+  text-shadow: 2px 2px #ec2b2b;
+}
+
+.comm {
+  font-style: italic;
+  color: #d1d1d1;
+  margin-left: -10rem;
+  text-shadow: 3px 3px #0e0e0e;
+}
+
+.form_area {
+  background: #fff;
+  margin-top: 1%;
+  margin-bottom: 3%;
+  padding: 3%;
+  border-radius: 0.5rem;
+  box-shadow: 4px 4px 4px 1px #777;
+}
+
+.top-margin-space {
+  font-size: 27px;
+  font-family: 'Oswald', sans-serif;
+  margin-left: 120px;
+  margin-top: 3rem;
+  margin-bottom: 2rem;
+}
+
+input, textarea, .uneditable-input {
+  border: 1px solid #bbb;
+  width: 25%;
+  margin-bottom: 20px;
+}
+
+select {
+  margin-bottom: 1.5rem;
+}
+
+input {
+  height: auto !important;
+}
+
+form {
+  width: 100%;
+}

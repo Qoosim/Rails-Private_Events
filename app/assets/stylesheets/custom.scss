@@ -8,9 +8,7 @@
 // font-family: 'Lato', sans-serif;
 // font-family: 'Oswald', sans-serif;
 
-
 /* Home Page Styling */
-
 body {
   margin-top: 8rem;
   box-sizing: border-box;
@@ -79,7 +77,6 @@ header {
 }
 
 /* Sign up Form Styling */
-
 body {
   background: #f1b452;
 }
@@ -143,7 +140,7 @@ form {
 }
 
 .form_button {
-  font-size: 1rem;
+  font-size: 1.5rem;
   font-weight: bold;
 }
 
@@ -159,4 +156,193 @@ form {
 .login_space {
   margin-top: 1rem;
   margin-left: 150px;
+}
+
+.event_to_see h2 {
+  font-size: 6rem;
+  font-family: 'Roboto Condensed', sans-serif;
+  text-align: center;
+  margin-top: 5rem;
+}
+
+.to_create {
+  text-shadow: 2px 2px #d67c21;
+}
+
+.to_see {
+  font-style: italic;
+  text-shadow: 2px 2px #f9fcf8;
+}
+
+.event_area {
+  background: #fff;
+  margin-top: -1rem;
+  padding: 4rem 1.5rem 3.5rem 1.5rem;
+  border-radius: 5px;
+  box-shadow: 4px 4px 4px 1px #777;
+}
+
+.formevent {
+  margin-top: 6rem;
+}
+
+.create_title {
+  font-size: 3rem;
+  font-family: 'Oswald', sans-serif;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+/* User Profile Styling */
+.user-temp {
+  background: #fffdd0;
+  height: auto;
+  border-radius: 5px;
+}
+
+.top-space {
+  padding-top: 7rem;
+  padding-bottom: 3rem;
+  border-radius: 5px;
+}
+
+.img-circle {
+  width: 30%;
+  height: 30%;
+  margin-left: 9rem;
+}
+
+.profile-title h1 {
+  font-size: 2rem;
+  font-family: 'Lato', sans-serif;
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.profile-title h4 {
+  font-size: 1.2rem;
+  font-style: italic;
+}
+
+.dividing-line p {
+  font-size: 1.5rem;
+  font-family: 'Montserrat', sans-serif;
+  font-style: italic;
+  text-align: center;
+  margin-top: 9rem;
+  border-bottom: 2px solid #d2d2d2;
+}
+
+.event-title h2 {
+  font-size: 2rem;
+  margin-top: -2rem;
+  margin-bottom: 1rem;
+  margin-left: 1.5rem;
+}
+
+.event-title h3 {
+  font-size: 1.5rem;
+  font-family: 'Lato', sans-serif;
+  margin-bottom: 0.5rem;
+  margin-left: 1.5rem;
+}
+
+.event-title p {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+  margin-left: 1.5rem;
+}
+
+/* Event pages and styling */
+.bg_event {
+  background: #fff;
+  padding: 9rem 3rem 5rem 3rem;
+}
+
+.side_img {
+  background-image: url('bg_img.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 300px;
+  border-radius: 10px;
+}
+
+.event_info h2 {
+  font-size: 2rem;
+  font-family: 'Lato', sans-serif;
+  margin-bottom: 0.7rem;
+}
+
+.event_info h3 {
+  font-size: 1.6rem;
+  font-family: 'Montserrat', sans-serif;
+  line-height: 36px;
+  font-style: italic;
+}
+
+.event_desc {
+  background: #f0eeee;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  margin-top: 1rem;
+  border-radius: 5px;
+}
+
+.event_desc h4 {
+  font-size: 1.4rem;
+  font-family: 'Lato', sans-serif;
+  font-style: italic;
+  line-height: 25px;
+}
+
+.bg_index {
+  padding: 3%;
+  margin: 3%;
+  border-radius: 0.5rem;
+  background: #fff;
+}
+
+.bg_index h1 {
+  font-size: 3rem;
+  font-family: 'Roboto Condensed', sans-serif;
+  text-align: center;
+  text-shadow: 1px 1px #d67c21;
+}
+
+.bg_index h2 {
+  font-size: 3rem;
+  font-style: italic;
+}
+
+.event_img {
+  background-image: url('bg_img.jpg');
+  background-size: cover;
+  background-position: center;
+  width: 270px;
+  height: 180px;
+  border-radius: 5px;
+  margin-left: 10px;
+}
+
+.event_img_info h2 {
+  font-size: 2rem;
+  margin: 0.5rem 0 0.5rem 0;
+}
+
+.event_img_info h3 {
+  font-size: 1rem;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.event_direction h4 {
+  font-size: 1.3rem;
+  font-style: italic;
+  background: #f0eeee;
+  padding: 3%;
+  margin: 2% 3% 0 2%;
+  border-radius: 8px;
+}
+
+.gap_btw {
+  margin-bottom: 2rem;
 }

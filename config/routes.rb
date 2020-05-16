@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
 
+  root 'static_pages#home'
 
   get  'signup',  to: 'users#new'
   post 'signup',  to: 'users#create'
@@ -9,5 +10,11 @@ Rails.application.routes.draw do
   post   'login',  to: 'sessions#create'
   delete 'logout', to: 'sessions#destroy'
 
+  get  'index',   to: 'events#index'
+  get  'create',  to: 'events#new'
+  post 'create',  to: 'events#create'
+  get  'events',  to: 'events#show'
+
   resources :users
+  resources :events
 end

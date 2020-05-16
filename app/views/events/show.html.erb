@@ -1,0 +1,20 @@
+<div class="container bg_event">
+  <div class="row">
+    <div class="col-md-7 side_img">
+
+    </div>
+
+    <div class="col-md-5 event_info">
+      <h2>Event Details</h2>
+      <h3>Author: <%= @event.user.name %></h3>
+      <h3>Title: <%= @event.title %></h3>
+      <h3>Date: <%= @event.event_date %></h3>
+      <h3>Venue: <%= @event.location %></h3>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-lg-7 event_desc">
+      <h4>Description: <%= @event.description%></h4>
+    </div>
+  </div>
+</div>

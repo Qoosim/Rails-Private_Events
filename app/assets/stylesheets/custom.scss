@@ -8,9 +8,74 @@
 // font-family: 'Lato', sans-serif;
 // font-family: 'Oswald', sans-serif;
 
+
+/* Home Page Styling */
+
 body {
-  margin-top: 7rem;
+  margin-top: 8rem;
   box-sizing: border-box;
+}
+
+header {
+  margin-bottom: 8rem;
+}
+
+.cover_img {
+  height: 100vh;
+  min-height: 500px;
+  margin-top: -8rem;
+  background-image: url('bg_img2.jpg');
+  background-size: cover;
+  background-position: 10% 90%;
+  position: relative;
+}
+
+.textover {
+  font-size: 8rem ;
+  font-family: 'Oswald', sans-serif;
+  font-weight: 500;
+  text-align: center;
+  color: #fff;
+  max-width: 85%;
+  margin: auto;
+  position: absolute;
+  top: 9rem;
+  left: 0;
+  right: 0;
+}
+
+.subtextover {
+  font-size: 4rem;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400px;
+  text-align: center;
+  color: #ffa500;
+  font-style: italic;
+  max-width: 60%;
+  margin: auto;
+  position: absolute;
+  top: 20rem;
+  left: 0;
+  right: 0;
+}
+
+.bg-color {
+  background: #0e0e0e;
+  height: 100px;
+  margin-top: -170px;
+}
+
+.title {
+  font-size: 5rem;
+  color: #ffa500;
+  margin-left: 3rem;
+}
+
+.title_text {
+  font-size: 2.5rem;
+  color: #fff;
+  font-style: italic;
+  margin-left: 3rem;
 }
 
 /* Sign up Form Styling */
@@ -35,7 +100,6 @@ body {
 
 .form_area {
   background: #fff;
-  margin-top: 1%;
   margin-bottom: 3%;
   padding: 3%;
   border-radius: 0.5rem;

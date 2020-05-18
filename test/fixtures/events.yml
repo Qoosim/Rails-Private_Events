@@ -3,11 +3,11 @@
 one:
   title: MyString
   description: MyText
-  event_date: 2020-05-15
+  event_date: 2020-05-18
   location: MyString
 
 two:
   title: MyString
   description: MyText
-  event_date: 2020-05-15
+  event_date: 2020-05-18
   location: MyString

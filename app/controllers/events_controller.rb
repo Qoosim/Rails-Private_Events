@@ -6,16 +6,16 @@ class EventsController < ApplicationController
 
   def index
     @events = Event.all
-    # @upcoming = Event.upcoming
-    # @past = Event.past
+    @upcoming = Event.upcoming
+    @past = Event.past
   end
 
   def new
-    @event = Event.new
+    @event = current_user.created_events.build
   end
 
   def create
-    @event = current_user.events.build(event_params)
+    @event = current_user.created_events.build(event_params)
 
     if @event.save
       flash.now[:notice] = 'Event was successfully created!'

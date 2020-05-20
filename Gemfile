@@ -29,6 +29,9 @@ gem 'hirb', '~> 0.7.3'
 gem 'bootsnap', '>= 1.4.2', require: false
 
 group :development, :test do
+   # Newly added gems
+  gem 'database_cleaner', '~> 1.8', '>= 1.8.5'
+  gem 'rspec-rails', '~> 4.0', '>= 4.0.1'
   # Use sqlite3 as the database for Active Record
   gem 'sqlite3', '~> 1.4'
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
@@ -36,6 +39,7 @@ group :development, :test do
 end
 
 group :development do
+  gem 'rubocop', require: false
   # Access an interactive console on exception pages or by calling 'console' anywhere in the code.
   gem 'web-console', '>= 3.3.0'
   gem 'listen', '~> 3.2'
@@ -45,6 +49,10 @@ group :development do
 end
 
 group :test do
+  # Newly added gems
+  gem 'shoulda'
+  gem 'shoulda-matchers'
+  gem 'rails-controller-testing'
   # Adds support for Capybara system testing and selenium driver
   gem 'capybara', '>= 2.15'
   gem 'selenium-webdriver'
@@ -53,4 +61,4 @@ group :test do
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
-gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
+#gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]

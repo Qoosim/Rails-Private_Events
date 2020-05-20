@@ -17,7 +17,7 @@
             </div>
           </div>
           <div class="row event_direction">
-            <h4>This event is taking place at: <%= upcoming.location %></h4>
+            <h4>This event is taking place on the <%= upcoming.event_date %> at: <%= upcoming.location %></h4>
           </div>
         </div>
       <% end %>
@@ -38,7 +38,7 @@
             </div>
           </div>
           <div class="row event_direction">
-            <h4>This event has taken place at: <%= past.location %></h4>
+            <h4>This event has taken place on the <%= past.event_date %> at <%= past.location %></h4>
           </div>
         </div>
       <% end %>

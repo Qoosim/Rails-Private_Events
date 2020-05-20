@@ -29,6 +29,20 @@ class EventsController < ApplicationController
     @event = Event.find(params[:id])
   end
 
+  def planned_event
+    user = current_user
+    @event = Event.find(params[:id])
+    @event.attendees << user
+    redirect_to user
+  end
+
+  def remove_event
+    user = current_user
+    @event = Event.find(params[:id])
+    @event.attendees.delete(user)
+    redirect_to user
+  end
+
   def destroy
     @event.delete
   end

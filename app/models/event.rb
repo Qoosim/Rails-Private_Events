@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 
 class Event < ApplicationRecord
-  has_many :attendances, foreign_key: :attended_event_id
+  has_many :attendances, foreign_key: :attended_event_id, dependent: :destroy
   has_many :attendees, through: :attendances, source: :event_attendee
   belongs_to :creator, class_name: 'User'
 

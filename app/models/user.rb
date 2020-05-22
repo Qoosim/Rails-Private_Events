@@ -13,7 +13,7 @@ class User < ApplicationRecord
 
  has_many :attendances, foreign_key: :event_attendee_id  # event_creator_id
  has_many :attended_events, through: :attendances
- has_many :created_events, foreign_key: :creator_id, class_name: 'Event'
+ has_many :created_events, dependent: :destroy, foreign_key: :creator_id, class_name: 'Event'
 
  has_secure_password
 

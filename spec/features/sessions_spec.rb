@@ -14,51 +14,30 @@ RSpec.describe 'User sign in', type: :feature do
   #   end
   # end
   # before { subject.save }
+  before(:each) do
+    @user = User.create!(username: 'test1', email: 'test1@gmail.com', password: 'password', password_confirmation: 'password')
+  end
 
   describe 'should log in to the app:' do
-    # before(:each) do
-    #   @user = User.create!(username: 'test1', email: 'test1@gmail.com', password: 'password', password_confirmation: 'password')
-    #   # @user.save
-    # end
-    scenario 'Valid user login' do
-      signup
+    scenario 'Invalid user login' do
       visit login_path
       within('form') do
-        fill_in 'Email', with: 'qoosim@gmail.com'
+        fill_in 'Email', with: 'name@gmail.com'
+        fill_in 'Password', with: 'apassword'
+      end
+      click_button 'Log in'
+      expect(page).to have_content('Invalid email/password combination')
+    end
+
+    scenario 'Valid user login' do
+      visit login_path
+      within('form') do
+        fill_in 'Email', with: 'test1@gmail.com'
         fill_in 'Password', with: 'password'
       end
       click_button 'Log in'
-      visit profile_path(@user)
-      sleep(10)
-      expect(page).to have_current_path(profile_path(@user))
+      visit user_path(@user)
+      expect(page).to have_current_path(user_path(@user))
     end
-
-    def signup
-      visit signup_path
-      within('form') do
-        fill_in 'Username', with: 'Qoosim'
-        fill_in 'Email', with: 'qoosim@gmail.com'
-        fill_in 'Password', with: 'password'
-        fill_in 'Confirmation', with: 'password'
-      end
-      click_button 'Sign up'
-    end
-
-    # scenario 'Invalid user login' do
-    #   visit login_path
-    #   within('form') do
-    #     fill_in 'Email', with: 'name@gmail.com'
-    #     fill_in 'Password', with: 'apassword'
-    #   end
-    #   click_button 'Log in'
-    #   expect(page).to have_content('Invalid email/password combination')
-    # end
   end
 end
-
-# visit signup_path
-#   fill_in 'Username', with: 'name'
-#   fill_in 'Email', with: 'name@gmail.com'
-#   fill_in 'Password', with: 'password'
-#   fill_in 'Confirmation', with: 'password'
-#   click_button 'Sign up'

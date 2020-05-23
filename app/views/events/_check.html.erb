@@ -1,0 +1,8 @@
+
+<% if @event.upcoming? %>
+  <% unless @event.attendees.include?(current_user) %>
+    <%= link_to 'Attend', planned_event_event_path(@event), class: "btn btn-primary", method: :post %>
+  <% else %>
+    <%= link_to 'Cancel Attendance', cancelled_event_event_path(@event), class: "btn btn-danger", method: :post %>
+  <% end %>
+<% end %>

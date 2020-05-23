@@ -19,12 +19,18 @@ The associations systems implemented into this project include:
   - User authentication - Password encryption and password digest storage to avoid storing raw user passwords
   - Session for user authentication
 
-## 🛠️ Technologies & Languages Used
+## 🧰 Models Created
+
+- User
+- Event
+- Attendance
+
+## 🛠️ Built with
 
 - Ruby 2.7.1
 - Ruby on Rails 6.0.3
 - Bootstrap 4.3.1
-- Rubocop 0.79.0
+- Rubocop 0.83.0
 - Stickler CI
 
 ## 🔰 Setup & Usage
@@ -32,27 +38,28 @@ The associations systems implemented into this project include:
 ### Setup
 In order to get this webpage up and running, you may have to do a little set up first.
   1. Make sure you have both [Ruby](https://www.ruby-lang.org/en/documentation/installation/) and Ruby on Rails ([Mac](https://gorails.com/setup/osx/10.15-catalina) • [Linux](https://gorails.com/setup/ubuntu/19.10) • [Windows](https://gorails.com/setup/windows/10)) installed.
-  2. Download this repo!
-  3. `cd` into the root directory of wherever you download this repo. [What does 'cd' mean?](https://www.macworld.com/article/2042378/master-the-command-line-navigating-files-and-folders.html)
+  2. You can clone or download this repo!
+
+      git clone git@github.com:Qoosim/Rails-Private_Events.git
+
+  3. `cd` into the root directory of the repo. [What does 'cd' mean?](https://www.macworld.com/article/2042378/master-the-command-line-navigating-files-and-folders.html)
   4. In your terminal window, enter `rails server` to start the server.
-  5. Now navigate to [localhost:4000](localhost:4000) in your browser to start playing with the webpages!
+  5. Now navigate to [localhost:3000](localhost:3000) in your browser to start playing with the webpages!
 
 ## 🕺🏽 Contributions, Issues & Forking
 
-If you have any issues setting up the project or you come across any unintended bugs or problems, please do submit an issue to the [Members-Only-Authentication](https://github.com/Rhelli/Members-Only-Authentication/issues) page.
+If you have any issues setting up the project or you come across any unintended bugs or problems, please do submit an issue to the [Private Events](https://github.com/Qoosim/Rails-Private_Events/issues) page.
 
-If you want to make your own changes, modifications or improvements to our project, go ahead and Fork it!
-1. [Fork it](https://github.com/Rhelli/Members-Only-Authentication/fork)
+If you want to make your own changes, modifications or improvements to this project, go ahead and Fork it!
+1. [Fork it](https://github.com/Qoosim/Rails-Private_Events/fork)
 2. Create your working branch (git checkout -b [choose-a-name])
 3. Commit your changes (git commit -am 'what this commit will fix/add/improve')
 4. Push to the branch (git push origin [chosen-name])
 5. Create a new Pull Request
 
-## 👨🏽‍💻 💂🏽‍♂️ Creators
+## 👨🏽‍💻 Creator
 
 Qoosim AbdulGhaniyy - [Github](https://github.com/Qoosim)
-
-Rory Hellier - [GitHub](https://github.com/Rhelli)
 
 ## 🎁 Show Your Support
 

@@ -1,27 +1,27 @@
 # 🔐 Private-Events - Rolling My Own Associations
 
-This project is part of a series of projects to be completed by students of [Microverse](https://www.microverse.org/).
+This project is part of series of projects to be completed by students of [Microverse](https://www.microverse.org/).
 
-In this project, I build a simple, exclusive site similar to a private <b><i>Eventbrite</i></b> which allows users to create events and then manage the users signups. Users can create events and send invitations and parties. A user can create events. A user can attend many events. An event can be attended by many usesrs.
+In this project, I built a simple, exclusive site similar to a private <b><i>Eventbrite</i></b> which allows users to create events and then manage the users signups. Users can create events and send invitations and parties. A user can create events. A user can attend many events. An event can be attended by many usesrs.
 
 ***********
 
 ## 💻 Previews
-Home
+Home Page
   ![Home](img/home.png)
-Signup
+Signup Page
   ![Signup](img/signup.png)
-Login
+Login Page
   ![Login](img/login.png)
-Profile
+Profile Page
   ![Profile](img/profile.png)
-Create Event
+Create Event Page
   ![Create](img/create_event.png)
-Event to Attend
+Event to Attend Page
   ![Attend](img/event_to_attend.png)
-Event to Cancel
+Event to Cancel Page
   ![Cancel](img/event_to_cancel.png)
-Event Index
+Event Index Page
   ![Index](img/event_index.png)
 
 ## 🎯 The Project Brief
@@ -57,7 +57,9 @@ In order to get this webpage up and running, you may have to do a little set up 
       git clone git@github.com:Qoosim/Rails-Private_Events.git
   3. `cd` into the root directory of the repo. [What does 'cd' mean?](https://www.macworld.com/article/2042378/master-the-command-line-navigating-files-and-folders.html)
   4. Run bellow command to get the gems that are needed for this project
-      bundle install --without production
+
+        bundle install --without production
+
   5. Migrate the databse with the `rails db:migrate` in the terminal
   5. In your terminal window, enter `rails server` to start the server.
   6. Now navigate to [localhost:3000](localhost:3000) in your browser to start playing with the webpages!
@@ -74,11 +76,11 @@ In order to get this webpage up and running, you may have to do a little set up 
   * User profile shows events created by the user
 
 ## 🧪 How to run test cases
-Command to run unit tests
-    rspec spec/controllers
-    rspec spec/models
-Command to run integration tests
-    rspec spec/features
+  * Command to run unit tests
+    `rspec spec/controllers`
+    `rspec spec/models`
+  * Command to run integration tests
+    `rspec spec/features`
 
 ## 🕹️ Contributions, Issues & Forking
 

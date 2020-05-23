@@ -1,6 +1,4 @@
 class User < ApplicationRecord
-<<<<<<< HEAD
-=======
 
   before_save { self.email = email.downcase }
   include UsersHelper
@@ -28,5 +26,4 @@ class User < ApplicationRecord
  def past_events
    attended_events.all.select { |event| event.date < Date.today }
  end
->>>>>>> feature/event_attendance
 end

@@ -26,7 +26,7 @@ RSpec.feature 'Users', type: :feature do
         fill_in 'Confirmation', with: 'apassword'
       end
       click_button 'Sign up'
-      expect(page).to have_content('Mismatched Password')
+      expect(page).to have_content("Password confirmation doesn't match")
     end
   end
 end

@@ -139,6 +139,17 @@ form {
   margin-top: 5rem;
 }
 
+.login_error {
+  font-size: 2rem;
+  font-family: 'Montserrat', sans-serif;
+  text-align: center;
+  font-style: italic;
+  width: 40%;
+  margin: auto;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+}
+
 .form_button {
   font-size: 1.5rem;
   font-weight: bold;
@@ -183,7 +194,8 @@ form {
 }
 
 .formevent {
-  margin-top: 6rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
 }
 
 .create_title {
@@ -277,7 +289,7 @@ form {
 .event_info h3 {
   font-size: 2rem;
   font-family: 'Montserrat', sans-serif;
-  line-height: 28px;
+  line-height: 18px;
   font-style: italic;
 }
 
@@ -294,6 +306,15 @@ form {
   font-family: 'Lato', sans-serif;
   font-style: italic;
   line-height: 25px;
+}
+
+.attend {
+  float: right;
+}
+
+.attend h3 {
+  font-size: 2rem;
+  line-height: 14px;
 }
 
 .bg_index {
@@ -347,4 +368,8 @@ form {
 
 .gap_btw {
   margin-bottom: 2rem;
+}
+
+.back {
+  margin-top: 1rem;
 }

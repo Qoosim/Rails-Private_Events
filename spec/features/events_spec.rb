@@ -23,7 +23,7 @@ RSpec.feature 'Event', type: :feature do
       within('form') do
         fill_in 'Title', with: 'test'
         fill_in 'Description', with: 'test'
-        fill_in 'Event Date', with: '2020/05/21'
+        fill_in 'Event Date', with: '2020-05-21'
         # select_date("2020,March,15", :from => "event_date")
         # page.find('event_date').set("2020-05-21")
         fill_in 'Location', with: 'test'

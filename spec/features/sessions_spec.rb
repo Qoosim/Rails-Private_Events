@@ -6,6 +6,7 @@ RSpec.describe 'User sign in', type: :feature do
   # subject do
   #   User.new(username: 'name', email: 'name@gmail.com', password: 'password', password_confirmation: 'password')
   # end
+  # before { subject.save }
 
   # let!('user') { User.new(username: 'name', email: 'name@gmail.com', password: 'password', password_confirmation: 'password')}
   # describe 'create' do
@@ -13,7 +14,7 @@ RSpec.describe 'User sign in', type: :feature do
   #     expect(user).to be_a_new(User)
   #   end
   # end
-  # before { subject.save }
+
   before(:each) do
     @user = User.create!(username: 'test1', email: 'test1@gmail.com', password: 'password', password_confirmation: 'password')
   end

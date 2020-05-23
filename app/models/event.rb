@@ -7,14 +7,13 @@ class Event < ApplicationRecord
 
   validates :title, :description, :event_date, :location, presence: true
 
-  scope :past, -> {
-    where('event_date < :current_time', current_time: Date.today)
-  }
-  scope :upcoming, -> {
-    where('event_date >= :current_time', current_time: Date.today)
-  }
+  require 'date'
 
-  # def upcoming?
-    # Event.upcoming.include?(self)
-  # end
+  scope :past, -> { where('event_date < ?', Date.today) }
+  scope :upcoming, -> { where('event_date >= ?', Date.today) }
+
+  def upcoming?
+    Event.upcoming.include?(self)
+  end
+
 end

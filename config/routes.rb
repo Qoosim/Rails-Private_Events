@@ -15,6 +15,13 @@ Rails.application.routes.draw do
   post 'create',  to: 'events#create'
   get  'events',  to: 'events#show'
 
+  resources :events do
+    member do
+      post :planned_event
+      post :cancelled_event
+    end
+  end
+
   resources :users, only: [:new, :create, :show]
   resources :events
 end

@@ -17,11 +17,13 @@ class User < ApplicationRecord
 
  has_secure_password
 
+ require 'date'
+
  def upcoming_events
-   attended_events.select { |event| event.current_time >= Date.today }
+   attended_events.all.select { |event| event.date >= Date.today }
  end
 
  def past_events
-   attended_events.select { |event| event.current_time < Date.today }
+   attended_events.all.select { |event| event.date < Date.today }
  end
 end

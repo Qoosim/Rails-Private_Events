@@ -1,1 +1,48 @@
-<h1>Index Page</h1>
+<div class="container-fluid">
+
+  <div class="row bg_index">
+    <h1>All the Events</h1>
+    <div class="col-lg-6">
+      <h2 class="jumbotron text-center">Upcoming Events</h2>
+
+      <% @upcoming.each do |upcoming| %>
+        <div class="gap_btw">
+          <div class="row">
+            <div class="col-lg-6 event_img">
+
+            </div>
+            <div class="col-lg-6 event_img_info">
+              <h2><%= link_to upcoming.title, event_path(upcoming) %></h2>
+              <h3><%= upcoming.event_date %></h3>
+            </div>
+          </div>
+          <div class="row event_direction">
+            <h4>This event is taking place on the <%= upcoming.event_date %> at: <%= upcoming.location %></h4>
+          </div>
+        </div>
+      <% end %>
+    </div>
+
+    <div class="col-lg-6">
+      <h2 class="jumbotron text-center">Past Events</h2>
+
+      <% @past.each do |past| %>
+        <div class="gap_btw">
+          <div class="row">
+            <div class="col-lg-6 event_img">
+
+            </div>
+            <div class="col-lg-6 event_img_info">
+              <h2><%= link_to past.title, event_path(past) %></h2>
+              <h3><%= past.event_date %></h3>
+            </div>
+          </div>
+          <div class="row event_direction">
+            <h4>This event has taken place on the <%= past.event_date %> at <%= past.location %></h4>
+          </div>
+        </div>
+      <% end %>
+    </div>
+  </div>
+
+</div>

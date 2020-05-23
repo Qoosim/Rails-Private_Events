@@ -7,4 +7,8 @@ module EventsHelper
       :location
     )
   end
+
+  def upcoming?
+    Event.upcoming.include?(self)
+  end
 end

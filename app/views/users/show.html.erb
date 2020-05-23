@@ -1,1 +1,47 @@
-<h1>User Page</h1>
+<div class="container user-temp">
+
+  <div class="row top-space">
+    <div class="col-md-4 color1">
+      <div class="profile-img">
+        <img src="https://picsum.photos/180/200" alt="Profile Image" class="img-circle">
+      </div>
+    </div>
+
+    <div class="col-md-6 color2">
+      <div class="profile-title">
+        <h1>Welcome <%= @user.username %></h1>
+        <h4><%= @user.email %></h4>
+      </div>
+    </div>
+
+
+  </div>
+  <div class="row">
+    <div class="col-lg-12 dividing-line">
+      <p>Below are your Events</p>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-md-4 event-title">
+      <h2>Created Events</h2>
+      <% @user.created_events.each do |event| %>
+        <h3><%= link_to event.title, event_path(event) %></h3>
+      <% end %>
+    </div>
+
+    <div class="col-md-4 event-title">
+      <h2>Upcoming Events</h2>
+      <% @user.created_events.upcoming.each do |attended| %>
+        <h3><%= link_to attended.title, event_path(attended) %></h3>
+      <% end %>
+    </div>
+
+    <div class="col-md-4 event-title">
+      <h2>Past Events</h2>
+      <% @user.created_events.past.each do |attended| %>
+        <h3><%= link_to attended.title, event_path(attended) %></h3>
+      <% end %>
+    </div>
+  </div>
+</div>

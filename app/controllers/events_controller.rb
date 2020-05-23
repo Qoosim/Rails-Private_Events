@@ -6,19 +6,19 @@ class EventsController < ApplicationController
 
   def index
     @events = Event.all
-    # @upcoming = Event.upcoming
-    # @past = Event.past
+    @past = Event.past
+    @upcoming = Event.upcoming
   end
 
   def new
-    @event = Event.new
+    @event = current_user.created_events.build
   end
 
   def create
-    @event = current_user.events.build(event_params)
+    @event = current_user.created_events.build(event_params)
 
     if @event.save
-      flash.now[:notice] = 'Event was successfully created!'
+      flash[:notice] = 'Event was created successfully!'
       redirect_to @event
     else
       render 'new'
@@ -27,6 +27,20 @@ class EventsController < ApplicationController
 
   def show
     @event = Event.find(params[:id])
+  end
+
+  def planned_event
+    user = current_user
+    @event = Event.find(params[:id])
+    @event.attendees << user
+    redirect_to user
+  end
+
+  def cancelled_event
+    user = current_user
+    @event = Event.find(params[:id])
+    @event.attendees.delete(user)
+    redirect_to user
   end
 
   def destroy

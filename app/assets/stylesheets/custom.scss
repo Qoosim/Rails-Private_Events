@@ -139,6 +139,17 @@ form {
   margin-top: 5rem;
 }
 
+.login_error {
+  font-size: 2rem;
+  font-family: 'Montserrat', sans-serif;
+  text-align: center;
+  font-style: italic;
+  width: 40%;
+  margin: auto;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+}
+
 .form_button {
   font-size: 1.5rem;
   font-weight: bold;
@@ -183,7 +194,8 @@ form {
 }
 
 .formevent {
-  margin-top: 6rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
 }
 
 .create_title {
@@ -198,6 +210,7 @@ form {
   background: #fffdd0;
   height: auto;
   border-radius: 5px;
+  padding-bottom: 3rem;
 }
 
 .top-space {
@@ -209,42 +222,42 @@ form {
 .img-circle {
   width: 30%;
   height: 30%;
-  margin-left: 9rem;
+  margin-left: 20rem;
 }
 
 .profile-title h1 {
-  font-size: 2rem;
+  font-size: 3.5rem;
   font-family: 'Lato', sans-serif;
   margin-top: 1rem;
   margin-bottom: 0.5rem;
 }
 
 .profile-title h4 {
-  font-size: 1.2rem;
+  font-size: 1.7rem;
   font-style: italic;
 }
 
 .dividing-line p {
-  font-size: 1.5rem;
+  font-size: 3rem;
   font-family: 'Montserrat', sans-serif;
   font-style: italic;
   text-align: center;
-  margin-top: 9rem;
   border-bottom: 2px solid #d2d2d2;
+  margin-top: -2rem;
 }
 
 .event-title h2 {
-  font-size: 2rem;
-  margin-top: -2rem;
+  font-size: 3rem;
   margin-bottom: 1rem;
   margin-left: 1.5rem;
 }
 
 .event-title h3 {
-  font-size: 1.5rem;
+  font-size: 2.2rem;
   font-family: 'Lato', sans-serif;
   margin-bottom: 0.5rem;
   margin-left: 1.5rem;
+  line-height: 8px;
 }
 
 .event-title p {
@@ -268,15 +281,15 @@ form {
 }
 
 .event_info h2 {
-  font-size: 2rem;
+  font-size: 3rem;
   font-family: 'Lato', sans-serif;
-  margin-bottom: 0.7rem;
+  margin-bottom: 0.5rem;
 }
 
 .event_info h3 {
-  font-size: 1.6rem;
+  font-size: 2rem;
   font-family: 'Montserrat', sans-serif;
-  line-height: 36px;
+  line-height: 18px;
   font-style: italic;
 }
 
@@ -289,21 +302,31 @@ form {
 }
 
 .event_desc h4 {
-  font-size: 1.4rem;
+  font-size: 2rem;
   font-family: 'Lato', sans-serif;
   font-style: italic;
   line-height: 25px;
 }
 
+.attend {
+  float: right;
+}
+
+.attend h3 {
+  font-size: 2rem;
+  line-height: 14px;
+}
+
 .bg_index {
   padding: 3%;
   margin: 3%;
+  margin-top: -1%;
   border-radius: 0.5rem;
   background: #fff;
 }
 
 .bg_index h1 {
-  font-size: 3rem;
+  font-size: 4rem;
   font-family: 'Roboto Condensed', sans-serif;
   text-align: center;
   text-shadow: 1px 1px #d67c21;
@@ -345,4 +368,8 @@ form {
 
 .gap_btw {
   margin-bottom: 2rem;
+}
+
+.back {
+  margin-top: 1rem;
 }

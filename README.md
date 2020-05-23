@@ -21,7 +21,8 @@ Event to Attend
   ![Attend](img/event_to_attend.png)
 Event to Cancel
   ![Cancel](img/event_to_cancel.png)
-
+Event Index
+  ![Index](img/event_index.png)
 
 ## 🎯 The Project Brief
 

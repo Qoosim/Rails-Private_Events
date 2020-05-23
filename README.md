@@ -58,13 +58,13 @@ In order to get this webpage up and running, you may have to do a little set up 
       `git clone git@github.com:Qoosim/Rails-Private_Events.git`
 
   3. `cd` into the root directory of the repo. [What does 'cd' mean?](https://www.macworld.com/article/2042378/master-the-command-line-navigating-files-and-folders.html)
-  4. Run bellow command to get the gems that are needed for this project
+  4. Run below command to get the gems that are needed for this project
 
         `bundle install --without production`
 
   5. Migrate the databse with the `rails db:migrate` in the terminal
   5. In your terminal window, enter `rails server` to start the server.
-  6. Now navigate to `[localhost:3000]`(localhost:3000) in your browser to start playing with the webpages!
+  6. Now navigate to [localhost:3000](localhost:3000) in your browser to start playing with the webpages!
 
 ## 🎉 Features
 
@@ -73,7 +73,7 @@ In order to get this webpage up and running, you may have to do a little set up 
   * Not logged users can see the events at events_path
   * Logged users can create new events
   * Logged users can attend upcoming events
-  * User profile shows events to attend and past events
+  * User profile shows upcoming and past events
   * Logged users already attending an event can cancel the attendance
   * User profile shows events created by the user
 

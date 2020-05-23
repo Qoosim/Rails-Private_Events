@@ -6,7 +6,21 @@ In this project, I build a simple, exclusive site similar to a private <b><i>Eve
 
 ***********
 
-## 🎥 Previews
+## 💻 Previews
+Home
+  ![Home](img/home.png)
+Signup
+  ![Signup](img/signup.png)
+Login
+  ![Login](img/login.png)
+Profile
+  ![Profile](img/profile.png)
+Create Event
+  ![Create](img/create_event.png)
+Event to Attend
+  ![Attend](img/event_to_attend.png)
+Event to Cancel
+  ![Cancel](img/event_to_cancel.png)
 
 
 ## 🎯 The Project Brief

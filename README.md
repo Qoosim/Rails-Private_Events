@@ -53,16 +53,18 @@ The associations systems implemented into this project include:
 ### Setup
 In order to get this webpage up and running, you may have to do a little set up first.
   1. Make sure you have both [Ruby](https://www.ruby-lang.org/en/documentation/installation/) and Ruby on Rails ([Mac](https://gorails.com/setup/osx/10.15-catalina) • [Linux](https://gorails.com/setup/ubuntu/19.10) • [Windows](https://gorails.com/setup/windows/10)) installed.
-  2. You can clone or download this repo!
-      git clone git@github.com:Qoosim/Rails-Private_Events.git
+  2. You can clone or download this repo! 
+  
+      `git clone git@github.com:Qoosim/Rails-Private_Events.git`
+
   3. `cd` into the root directory of the repo. [What does 'cd' mean?](https://www.macworld.com/article/2042378/master-the-command-line-navigating-files-and-folders.html)
   4. Run bellow command to get the gems that are needed for this project
 
-        bundle install --without production
+        `bundle install --without production`
 
   5. Migrate the databse with the `rails db:migrate` in the terminal
   5. In your terminal window, enter `rails server` to start the server.
-  6. Now navigate to [localhost:3000](localhost:3000) in your browser to start playing with the webpages!
+  6. Now navigate to `[localhost:3000]`(localhost:3000) in your browser to start playing with the webpages!
 
 ## 🎉 Features
 
@@ -76,8 +78,8 @@ In order to get this webpage up and running, you may have to do a little set up 
   * User profile shows events created by the user
 
 ## 🧪 How to run test cases
-  * Command to run unit tests
-    `rspec spec/controllers`
+  * Commands to run unit tests
+    `rspec spec/controllers`, 
     `rspec spec/models`
   * Command to run integration tests
     `rspec spec/features`

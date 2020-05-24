@@ -1,5 +1,4 @@
 class UsersController < ApplicationController
-  include UsersHelper
   include SessionsHelper
 
   def index
@@ -27,4 +26,13 @@ class UsersController < ApplicationController
     # @past_events = current_user.past_events
   end
 
+  private
+    def user_params
+      params.require(:user).permit(
+        :username,
+        :email,
+        :password,
+        :password_confirmation
+      )
+    end
 end

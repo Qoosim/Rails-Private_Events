@@ -5,12 +5,12 @@ class Event < ApplicationRecord
   has_many :attendees, through: :attendances, source: :event_attendee
   belongs_to :creator, class_name: 'User'
 
-  validates :title, :description, :event_date, :location, presence: true
+  validates :title, :description, :date, :location, presence: true
 
   require 'date'
 
-  scope :past, -> { where('event_date < ?', Date.today) }
-  scope :upcoming, -> { where('event_date >= ?', Date.today) }
+  scope :past, -> { where('date < ?', Date.today) }
+  scope :upcoming, -> { where('date >= ?', Date.today) }
 
   def upcoming?
     Event.upcoming.include?(self)

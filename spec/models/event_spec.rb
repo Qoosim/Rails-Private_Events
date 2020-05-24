@@ -5,7 +5,7 @@ require 'rails_helper'
 RSpec.describe Event, type: :model do
   before(:each) do
     @user = User.create(username: 'Test_user', email: 'test@user.com', password: '123456', password_confirmation: '123456')
-    @event = Event.create(title: 'Test Event', description: 'Test Descripton', event_date: '2020-04-20', creator_id: 1 )
+    @event = Event.create(title: 'Test Event', description: 'Test Descripton', date: '04-20-2020', creator_id: 1 )
   end
 
   after(:each) do
@@ -16,7 +16,7 @@ RSpec.describe Event, type: :model do
   context 'ActiveRecord Validations' do
     it { should validate_presence_of(:title) }
     it { should validate_presence_of(:description) }
-    it { should validate_presence_of(:event_date) }
+    it { should validate_presence_of(:date) }
     it { should validate_presence_of(:location) }
   end
 
@@ -39,7 +39,7 @@ RSpec.describe Event, type: :model do
     end
 
     it 'is invalid if the event date is empty' do
-      @event.event_date = nil
+      @event.date = nil
       expect(@event.valid?).not_to eq(true)
     end
 

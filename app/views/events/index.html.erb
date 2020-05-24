@@ -13,11 +13,11 @@
             </div>
             <div class="col-lg-6 event_img_info">
               <h2><%= link_to upcoming.title, event_path(upcoming) %></h2>
-              <h3><%= upcoming.event_date %></h3>
+              <h3><%= upcoming.date %></h3>
             </div>
           </div>
           <div class="row event_direction">
-            <h4>This event is taking place on the <%= upcoming.event_date %> at: <%= upcoming.location %></h4>
+            <h4>This event is taking place on the <%= upcoming.date %> at: <%= upcoming.location %></h4>
           </div>
         </div>
       <% end %>
@@ -34,11 +34,11 @@
             </div>
             <div class="col-lg-6 event_img_info">
               <h2><%= link_to past.title, event_path(past) %></h2>
-              <h3><%= past.event_date %></h3>
+              <h3><%= past.date %></h3>
             </div>
           </div>
           <div class="row event_direction">
-            <h4>This event has taken place on the <%= past.event_date %> at <%= past.location %></h4>
+            <h4>This event has taken place on the <%= past.date %> at <%= past.location %></h4>
           </div>
         </div>
       <% end %>

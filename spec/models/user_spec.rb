@@ -5,7 +5,7 @@ require 'rails_helper'
 RSpec.describe User, type: :model do
   before(:each) do
     @user = User.create(username: 'Test_user', email: 'test@user.com', password: '123456', password_confirmation: '123456')
-    @event = Event.create(title: 'Test Event', description: 'Test Descripton', event_date: '2020-04-20', creator_id: 1 )
+    @event = Event.create(title: 'Test Event', description: 'Test Descripton', date: '04-20-2020', creator_id: 1 )
   end
 
   it 'ensures username not to be nil' do
@@ -48,7 +48,7 @@ RSpec.describe User, type: :model do
     @user.password_confirmation = '1234567'
     expect(@user).to_not be_valid
   end
-  
+
   describe 'ActiveRecord Validations' do
     it { should validate_presence_of(:username) }
     it {should validate_presence_of(:email) }

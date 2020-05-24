@@ -8,7 +8,7 @@
       <h2>Event Details</h2>
       <h3>Author: <%= @event.creator.username %></h3>
       <h3>Title: <%= @event.title %></h3>
-      <h3>Date: <%= @event.event_date %></h3>
+      <h3>Date: <%= @event.date %></h3>
       <h3>Location: <%= @event.location %></h3>
     </div>
   </div>
@@ -27,8 +27,5 @@
         <%= render 'check' %>
       </div>
     </div>
-  </div>
-  <!-- <div class="row"> -->
-    <!-- <p> link_to '<<< Back', user_path(@user), class: 'btn btn-primary back' </p> -->
   </div>
 </div>

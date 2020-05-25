@@ -31,16 +31,17 @@
     </div>
 
     <div class="col-md-4 event-title">
-      <h2>Upcoming Events</h2>
-      <% @user.created_events.upcoming.each do |attended| %>
-        <h3><%= link_to attended.title, event_path(attended) %></h3>
+      <h2>Past Events</h2>
+      <% @past_events.each do |past| %>
+        <h3><%= past.title %></h3>
       <% end %>
+
     </div>
 
     <div class="col-md-4 event-title">
-      <h2>Past Events</h2>
-      <% @user.created_events.past.each do |attended| %>
-        <h3><%= link_to attended.title, event_path(attended) %></h3>
+      <h2>Events to Attend</h2>
+      <% @upcoming_events.each do |upcoming| %>
+        <h3><%= upcoming.title %></h3>
       <% end %>
     </div>
   </div>

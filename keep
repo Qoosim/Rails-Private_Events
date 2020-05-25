@@ -1,0 +1,3 @@
+<% @user.attended_events.upcoming.each do |attended| %>
+  <h3><%= attended.title %></h3>
+<% end %>

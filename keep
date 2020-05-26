@@ -1,3 +1,13 @@
 <% @user.attended_events.upcoming.each do |attended| %>
   <h3><%= attended.title %></h3>
 <% end %>
+
+require 'date'
+
+def upcoming_events
+   attended_events.all.select { |event| event.date >= Date.today }
+ end
+
+ def past_events
+   attended_events.all.select { |event| event.date < Date.today }
+ end

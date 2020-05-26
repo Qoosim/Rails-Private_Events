@@ -19,6 +19,8 @@ Create Event Page
   ![Create](img/create_event.png)
 Event to Attend Page
   ![Attend](img/event_to_attend.png)
+Attending Events Page
+  ![Attending](img/attending.png)
 Event to Cancel Page
   ![Cancel](img/event_to_cancel.png)
 Event Index Page

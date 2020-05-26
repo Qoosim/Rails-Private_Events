@@ -48,4 +48,12 @@ RSpec.describe Event, type: :model do
       expect(@event.valid?).not_to eq(true)
     end
   end
+
+  describe 'Upcoming Events' do
+    it "is upcoming if the event date is greater than or equal to the day event was created" do
+      @event.date = Date.today
+
+      expect(@event.date).to be >= Date.today
+    end
+  end
 end

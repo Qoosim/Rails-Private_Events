@@ -11,3 +11,16 @@ def upcoming_events
  def past_events
    attended_events.all.select { |event| event.date < Date.today }
  end
+
+
+ describe 'Upcoming' do
+    it 'is valid if the date is equal or greater than today' do
+        @user.created_events.date = @event.date
+      expect(@event.date).to be >= Date.today
+    end
+
+    it 'is invalid if the date is less than today' do
+
+      expect(@event.date).to be < Date.today
+    end
+  end

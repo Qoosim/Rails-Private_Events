@@ -27,7 +27,7 @@ RSpec.feature 'Event', type: :feature do
         fill_in 'Location', with: 'test'
       end
       click_button 'Create'
-      expect(page).to have_content('new event')
+      expect(page).to have_content('test')
     end
   end
 end

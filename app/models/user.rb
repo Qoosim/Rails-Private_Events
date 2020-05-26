@@ -17,13 +17,4 @@ class User < ApplicationRecord
 
  has_secure_password
 
- require 'date'
-
- def upcoming_events
-   attended_events.all.select { |event| event.date >= Date.today }
- end
-
- def past_events
-   attended_events.all.select { |event| event.date < Date.today }
- end
 end

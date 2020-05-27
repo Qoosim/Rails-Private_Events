@@ -1,5 +1,3 @@
-# frozen_string_literal: true
-
 class Event < ApplicationRecord
   has_many :attendances, foreign_key: :attended_event_id, dependent: :destroy
   has_many :attendees, through: :attendances, source: :event_attendee
@@ -15,5 +13,4 @@ class Event < ApplicationRecord
   def upcoming?
     Event.upcoming.include?(self)
   end
-
 end

@@ -1,0 +1,31 @@
+<div class="container bg_event">
+  <div class="row">
+    <div class="col-md-7 side_img">
+
+    </div>
+
+    <div class="col-md-5 event_info">
+      <h2>Event Details</h2>
+      <h3>Author: <%= @event.creator.username %></h3>
+      <h3>Title: <%= @event.title %></h3>
+      <h3>Date: <%= @event.date %></h3>
+      <h3>Location: <%= @event.location %></h3>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-lg-7 event_desc">
+      <h4>Description: <%= @event.description%></h4>
+    </div>
+
+    <div class="col-lg-4">
+      <div class="attend">
+        <h3>Attendees</h3>
+        <% @event.attendees.each do |attendee| %>
+          <h3><%= attendee.username %></h3>
+        <% end %>
+        <%= render 'check' %>
+      </div>
+    </div>
+  </div>
+</div>

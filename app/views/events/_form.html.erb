@@ -1,0 +1,26 @@
+<%= form_for(@event) do |f| %>
+
+  <div>
+    <% if @event.errors.any? %>
+      <ul>
+        <% @event.errors.full_messages.each do |err| %>
+          <li><%= err %></li>
+        <% end %>
+      </ul>
+    <% end %>
+  </div>
+
+  <%= f.label :title, class: 'label_html' %>
+  <%= f.text_field :title, class: 'form-control' %>
+
+  <%= f.label :description, class: 'label_html' %>
+  <%= f.text_area :description, class: 'form-control' %>
+
+  <%= f.label :date, 'Event Date', class: 'label_html' %>
+  <%= f.date_field :date, class: 'form-control' %>
+  <%= f.label :location, class: 'label_html' %>
+  <%= f.text_field :location, class: 'form-control' %>
+
+  <%= f.submit yield(:button_text), class: 'btn btn-primary form_button' %>
+
+<% end %>

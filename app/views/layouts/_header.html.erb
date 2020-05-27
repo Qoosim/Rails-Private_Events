@@ -1,0 +1,15 @@
+<header class="navbar navbar-fixed-top navbar-inverse">
+  <div class="container">
+    <nav>
+      <ul class="nav navbar-nav navbar-right">
+        <li><%= link_to 'Home', :root %></li>
+        <li><%= link_to 'Events', index_path %></li>
+        <li><%= link_to 'Create Event', create_path if logged_in? %></li>
+        <li><%= link_to 'Sign up', signup_path if !logged_in? %></li>
+        <li><%= link_to 'Profile', current_user if logged_in? %></li>
+        <li><%= link_to 'Log in', login_path if !logged_in? %></li>
+        <li><%= link_to 'Log out', logout_path, method: :delete if logged_in? %></li>
+      </ul>
+    </nav>
+  </div>
+</header>

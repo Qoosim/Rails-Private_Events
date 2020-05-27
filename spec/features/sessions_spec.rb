@@ -1,11 +1,9 @@
-# frozen_string_literal: true
-
 require 'rails_helper'
 
 RSpec.describe 'User sign in', type: :feature do
-
   before(:each) do
-    @user = User.create!(username: 'test1', email: 'test1@gmail.com', password: 'password', password_confirmation: 'password')
+    @user = User.create!(username: 'test1', email: 'test1@gmail.com',
+                         password: 'password', password_confirmation: 'password')
   end
 
   describe 'should log in to the app:' do

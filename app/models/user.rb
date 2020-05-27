@@ -1,5 +1,4 @@
 class User < ApplicationRecord
-
   before_save { self.email = email.downcase }
   include UsersHelper
 
@@ -11,10 +10,9 @@ class User < ApplicationRecord
                     format: { with: VALID_EMAIL_REGEX },
                     uniqueness: { case_sensitive: false }
 
- has_many :attendances, foreign_key: :event_attendee_id
- has_many :attended_events, through: :attendances
- has_many :created_events, dependent: :destroy, foreign_key: :creator_id, class_name: 'Event'
+  has_many :attendances, foreign_key: :event_attendee_id
+  has_many :attended_events, through: :attendances
+  has_many :created_events, dependent: :destroy, foreign_key: :creator_id, class_name: 'Event'
 
- has_secure_password
-
+  has_secure_password
 end

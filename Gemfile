@@ -22,6 +22,7 @@ gem 'jbuilder', '~> 2.7'
 gem 'bcrypt', '~> 3.1.7'
 gem 'hirb', '~> 0.7.3'
 
+gem 'sassc', '~> 2.1.0'
 # Use Active Storage variant
 # gem 'image_processing', '~> 1.2'
 
